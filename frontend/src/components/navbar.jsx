@@ -5,6 +5,8 @@ export default function Navbar() {
         <div>
           <div>home</div>
           <div>docs</div>
+          <div>about</div>
+          <div>login</div>
         </div>
       </nav>
     </>
