@@ -7,6 +7,8 @@ export default function Navbar() {
           <div>docs</div>
           <div>about</div>
           <div>resources</div>
+          <div>hy</div>
+          <div>hello</div>
         </div>
       </nav>
     </>
