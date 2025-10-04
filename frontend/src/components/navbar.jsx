@@ -3,7 +3,8 @@ export default function Navbar() {
     <>
       <nav>
         <div>
-          <div></div>
+          <div>home</div>
+          <div>docs</div>
         </div>
       </nav>
     </>
