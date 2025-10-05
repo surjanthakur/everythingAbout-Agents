@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 dark:bg-black transition-colors  transition-colors">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-26">
           <Link to="/" className="flex items-center gap-2 group">
-            <Bot className="w-8 h-8 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform" />
-            <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 dark:from-blue-400 dark:to-cyan-400 bg-clip-text text-transparent">
+            <Bot className="w-14 h-14  text-yellow-500  group-hover:scale-110 transition-transform" />
+            <span className=" gravitas-one-regular text-3xl  bg-white bg-clip-text text-transparent">
               Everything About-Agents
             </span>
           </Link>
