@@ -7,6 +7,10 @@ import Home from "./pages/home";
 
 const Docs = lazy(() => import("./pages/docs"));
 const Overview = lazy(() => import("./docs/overview"));
+const Start = lazy(() => import("./docs/getStart"));
+const Aboutllm = lazy(() => import("./docs/llm"));
+const AboutModels = lazy(() => import("./docs/models"));
+const AboutPrompts = lazy(() => import("./docs/prompts"));
 
 export default function App() {
   return (
@@ -19,8 +23,13 @@ export default function App() {
           >
             <Routes>
               <Route path="/" element={<Home />} />
+
               <Route path="/docs" element={<Docs />}>
                 <Route index element={<Overview />}></Route>
+                <Route path="start" element={<Start />}></Route>
+                <Route path="llm" element={<Aboutllm />}></Route>
+                <Route path="models" element={<AboutModels />}></Route>
+                <Route path="prompts" element={<AboutPrompts />}></Route>
               </Route>
             </Routes>
           </Suspense>

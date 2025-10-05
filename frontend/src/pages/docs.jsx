@@ -2,8 +2,10 @@ import { NavLink, Outlet } from "react-router-dom";
 
 export default function Docs() {
   const links = [
-    { path: "tutorials", label: "Tutorials" },
-    { path: "how-to-guides", label: "How-to Guides" },
+    { path: "start", label: "Get start" },
+    { path: "llm", label: "learn about llm" },
+    { path: "models", label: "learn about models" },
+    { path: "prompts", label: "learn about prompts" },
   ];
 
   return (
