@@ -26,7 +26,7 @@ export default function Navbar() {
               Docs
             </Link>
             <Link
-              to="/resources"
+              to="/resource"
               className={`font-medium  text-white transition-colors`}
             >
               Reading materials

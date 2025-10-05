@@ -5,6 +5,7 @@ import { lazy, Suspense } from "react";
 import Navbar from "./components/header";
 import Home from "./pages/home";
 
+const Resource = lazy(() => import("./pages/resources"));
 const Docs = lazy(() => import("./pages/docs"));
 const Overview = lazy(() => import("./docs/overview"));
 const Start = lazy(() => import("./docs/getStart"));
@@ -31,6 +32,7 @@ export default function App() {
                 <Route path="models" element={<AboutModels />}></Route>
                 <Route path="prompts" element={<AboutPrompts />}></Route>
               </Route>
+              <Route path="/resource" element={<Resource />} />
             </Routes>
           </Suspense>
         </main>
