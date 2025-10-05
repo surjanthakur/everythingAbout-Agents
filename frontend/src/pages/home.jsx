@@ -1,6 +1,7 @@
 import { Bot, AlertTriangle } from "lucide-react";
 import { animate, stagger, splitText } from "animejs";
 import { useEffect } from "react";
+import "../css/home.css";
 
 export default function Home() {
   useEffect(() => {
@@ -13,7 +14,7 @@ export default function Home() {
       // Property keyframes
       y: [
         { to: "-2.75rem", ease: "outExpo", duration: 600 },
-        { to: 0, ease: "outBounce", duration: 5000, delay: 2000 },
+        { to: 0, ease: "outBounce", duration: 3000, delay: 2000 },
       ],
       // Property specific parameters
       rotate: {
@@ -28,18 +29,18 @@ export default function Home() {
   }, []);
   return (
     <>
-      <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 dark:from-slate-900 dark:to-slate-800 transition-colors">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div className="min-h-screen transition-colors hero-dots">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 ">
           <div className="text-center mb-16 animate-fade-in">
             <div className="flex justify-center mb-8">
               <div className="relative">
                 <div className="absolute inset-0 bg-blue-500 dark:bg-blue-400 blur-3xl opacity-20 rounded-full"></div>
-                <Bot className="w-24 h-24 text-blue-600 dark:text-blue-400 relative" />
+                <Bot className="w-24 h-24 text-black dark:text-black relative" />
               </div>
             </div>
 
-            <h1 className="text-5xl text-white md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-600 dark:from-blue-400 dark:via-cyan-400 dark:to-blue-400 bg-clip-text animate-gradient">
-              Everything About Agents
+            <h1 className=" gravitas-one-regular text-5xl text-yellow-400 md:text-7xl font-bold mb-6 bg-clip-text animate-gradient">
+              EVERYTHING ABOUT AGENTS
             </h1>
 
             <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
@@ -49,13 +50,13 @@ export default function Home() {
             <div className="flex flex-wrap justify-center gap-4">
               <a
                 href="#disclaimer"
-                className="px-8 py-3 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white rounded-lg font-medium transition-all hover:scale-105 shadow-lg hover:shadow-xl"
+                className="py-5 h-18 w-38 text-2xl text-white bg-black hover:bg-yellow-500 hover:text-black  font-bold transition-all hover:scale-105 shadow-lg hover:shadow-xl "
               >
                 Get Started
               </a>
               <a
                 href="/notes"
-                className="px-8 py-3 bg-transparent text-white  rounded-lg font-medium transition-all hover:scale-105 shadow-lg hover:shadow-xl border border-gray-200 dark:border-slate-700"
+                className="py-5 h-18 w-38 text-2xl text-black bg-yellow-500 hover:bg-black hover:text-white font-bold transition-all hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 View Notes
               </a>
@@ -64,9 +65,9 @@ export default function Home() {
 
           <div id="disclaimer" className="max-w-4xl mx-auto">
             <div
-              className=" rounded-2xl shadow-xl p-8 md:p-12 border border-yellow-700 
-               dark:border-yellow-700 transition-colors 
-               bg-yellow-100/20 dark:bg-yellow-900/20 
+              className=" rounded-2xl shadow-xl p-8 md:p-12  
+              transition-colors 
+               bg-black 
                backdrop-blur-xl"
             >
               <div className="flex items-start gap-4 mb-6">
