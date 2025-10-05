@@ -20,7 +20,7 @@ export default function Navbar() {
               Home
             </Link>
             <Link
-              to="/notes"
+              to="/docs"
               className={`font-medium transition-colors text-white`}
             >
               Docs
