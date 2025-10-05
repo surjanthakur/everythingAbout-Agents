@@ -1,6 +1,31 @@
 import { Bot, AlertTriangle } from "lucide-react";
+import { animate, stagger, splitText } from "animejs";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    const { chars } = splitText("h1", {
+      words: false,
+      chars: true,
+    });
+
+    animate(chars, {
+      // Property keyframes
+      y: [
+        { to: "-2.75rem", ease: "outExpo", duration: 600 },
+        { to: 0, ease: "outBounce", duration: 5000, delay: 2000 },
+      ],
+      // Property specific parameters
+      rotate: {
+        from: "-1turn",
+        delay: 0,
+      },
+      delay: stagger(50),
+      ease: "inOutCirc",
+      loopDelay: 1000,
+      loop: true,
+    });
+  }, []);
   return (
     <>
       <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 dark:from-slate-900 dark:to-slate-800 transition-colors">
@@ -13,7 +38,7 @@ export default function Home() {
               </div>
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-600 dark:from-blue-400 dark:via-cyan-400 dark:to-blue-400 bg-clip-text text-transparent animate-gradient">
+            <h1 className="text-5xl text-white md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-cyan-600 to-blue-600 dark:from-blue-400 dark:via-cyan-400 dark:to-blue-400 bg-clip-text animate-gradient">
               Everything About Agents
             </h1>
 
