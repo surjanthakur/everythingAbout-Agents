@@ -32,13 +32,13 @@ export default function Navbar() {
               Reading materials
             </Link>
             <Link
-              to="/youtube"
+              to="/tutorial"
               className={`font-medium  text-white transition-colors`}
             >
               Tutorials
             </Link>
             <Link
-              to="/tutorials"
+              to="/about"
               className={`font-medium  text-white transition-colors`}
             >
               About
