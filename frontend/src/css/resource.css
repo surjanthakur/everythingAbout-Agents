@@ -1,6 +1,7 @@
 /* From Uiverse.io by 0xnihilism */
 .card {
-  width: 300px;
+  width: 600px;
+  max-width: max-content;
   padding: 20px;
   background: #fff;
   border: 6px solid #000;
