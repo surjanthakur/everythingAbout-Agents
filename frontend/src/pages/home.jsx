@@ -1,6 +1,7 @@
 import { Bot, AlertTriangle } from "lucide-react";
 import { animate, stagger, splitText } from "animejs";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "../css/home.css";
 
 export default function Home() {
@@ -54,12 +55,12 @@ export default function Home() {
               >
                 Get Started
               </a>
-              <a
-                href="/notes"
+              <Link
+                to="/docs"
                 className="py-5 h-18 w-38 text-2xl text-black bg-yellow-500 hover:bg-black hover:text-white font-bold transition-all hover:scale-105 shadow-lg hover:shadow-xl"
               >
                 View Notes
-              </a>
+              </Link>
             </div>
           </div>
 
