@@ -7,7 +7,7 @@ import chatSession from "../image/streamlit-session-state-chat-message.png";
 export default function Aboutllm() {
   return (
     <>
-      <div className="text-white px-6 py-8 space-y-6 leading-relaxed">
+      <div className=" md:px-20 lg:px-40 py-10 bg-gray-950 text-gray-100">
         {/* Project Title */}
         <h1 className="text-3xl font-bold text-cyan-400 mb-4">
           Luna AI Agent Chatbot with Tools
@@ -69,7 +69,7 @@ export default function Aboutllm() {
         <img
           src={main}
           alt="Main Streamlit UI"
-          className="rounded-2xl shadow-lg w-full sm:w-3/4 mx-auto my-4"
+          className=" shadow-lg w-full sm:w-3/4 mx-auto my-4"
         />
         <p>
           This part builds the <strong>frontend</strong> using Streamlit. It
