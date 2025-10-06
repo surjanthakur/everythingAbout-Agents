@@ -17,9 +17,9 @@ const AboutPrompts = lazy(() => import("./docs/prompts"));
 export default function App() {
   return (
     <>
-      <div className="flex flex-col min-h-screen bg-white ">
+      <div className="flex flex-col min-h-screen bg-white  ">
         <Navbar />
-        <main className="flex-1">
+        <main className="flex-1 hero-dots">
           <Suspense
             fallback={<div className="text-center p-8">Loading...</div>}
           >

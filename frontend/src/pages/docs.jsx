@@ -9,7 +9,7 @@ export default function Docs() {
   ];
 
   return (
-    <div className="flex min-h-screen dark:bg-slate-900 text-white transition-colors">
+    <div className="flex min-h-screen  text-white transition-colors">
       {/* Sidebar */}
       <aside
         style={{ backgroundColor: "oklch(20.5% 0 0)" }}

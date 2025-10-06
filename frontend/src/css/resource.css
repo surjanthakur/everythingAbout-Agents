@@ -4,8 +4,9 @@
   max-width: max-content;
   padding: 20px;
   background: #fff;
-  border: 6px solid #000;
+  background: #9d0de5;
   margin-top: 2rem;
+  border: 5px solid black;
   box-shadow: 12px 12px 0 #000;
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -18,7 +19,7 @@
 .card__title {
   font-size: 32px;
   font-weight: 900;
-  color: #000;
+  color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 15px;
   display: block;
@@ -133,24 +134,4 @@
 
 .glitch {
   animation: glitch 0.3s infinite;
-}
-
-.hero-dots {
-  background-color: #ff00a7;
-}
-
-.hero-dots::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(#000000 3px, transparent 2px);
-  background-size: 40px 40px; /* adjust dot spacing */
-  opacity: 0.08; /* subtle look */
-  pointer-events: none;
-  z-index: 0;
-}
-
-.hero-dots > * {
-  position: relative;
-  z-index: 1;
 }

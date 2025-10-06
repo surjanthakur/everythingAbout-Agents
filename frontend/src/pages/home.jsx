@@ -29,7 +29,7 @@ export default function Home() {
   }, []);
   return (
     <>
-      <div className="min-h-screen transition-colors hero-dots">
+      <div className="min-h-screen transition-colors ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 ">
           <div className="text-center mb-16 animate-fade-in">
             <div className="flex justify-center mb-8">

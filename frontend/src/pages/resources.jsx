@@ -3,7 +3,7 @@ import Card from "../components/resourceCard";
 export default function Resource() {
   return (
     <>
-      <div className="relative overflow-hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 hero-dots">
+      <div className="relative overflow-hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
         <Card
           title="learn about prompts"
           about="im this section you learn about prompts"

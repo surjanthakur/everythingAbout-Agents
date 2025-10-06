@@ -3,60 +3,12 @@ import Card from "../components/tutorialsCard";
 export default function Tutorial() {
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  mt-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
         <Card
-          title="how agents work"
-          about="in this lesson you learn how llms work and how you can learn fron them"
-          image="https://www.investopedia.com/thmb/tlR8txIaI5rJgsj5uMF6a2Q2ous=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/agent.asp-final-2c6fe755ba534208bc93e647f2168b8f.png"
-          url="https://youtu.be/5hjrPILA3-8?si=Epf0o5VyIIWZ2qP0"
-        />
-        <Card
-          title="how agents work"
-          about="in this lesson you learn how llms work and how you can learn fron them"
-          image="https://www.investopedia.com/thmb/tlR8txIaI5rJgsj5uMF6a2Q2ous=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/agent.asp-final-2c6fe755ba534208bc93e647f2168b8f.png"
-          url="https://youtu.be/5hjrPILA3-8?si=Epf0o5VyIIWZ2qP0"
-        />
-        <Card
-          title="how agents work"
-          about="in this lesson you learn how llms work and how you can learn fron them"
-          image="https://www.investopedia.com/thmb/tlR8txIaI5rJgsj5uMF6a2Q2ous=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/agent.asp-final-2c6fe755ba534208bc93e647f2168b8f.png"
-          url="https://youtu.be/5hjrPILA3-8?si=Epf0o5VyIIWZ2qP0"
-        />
-        <Card
-          title="how agents work"
-          about="in this lesson you learn how llms work and how you can learn fron them"
-          image="https://www.investopedia.com/thmb/tlR8txIaI5rJgsj5uMF6a2Q2ous=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/agent.asp-final-2c6fe755ba534208bc93e647f2168b8f.png"
-          url="https://youtu.be/5hjrPILA3-8?si=Epf0o5VyIIWZ2qP0"
-        />
-        <Card
-          title="how agents work"
-          about="in this lesson you learn how llms work and how you can learn fron them"
-          image="https://www.investopedia.com/thmb/tlR8txIaI5rJgsj5uMF6a2Q2ous=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/agent.asp-final-2c6fe755ba534208bc93e647f2168b8f.png"
-          url="https://youtu.be/5hjrPILA3-8?si=Epf0o5VyIIWZ2qP0"
-        />
-        <Card
-          title="how agents work"
-          about="in this lesson you learn how llms work and how you can learn fron them"
-          image="https://www.investopedia.com/thmb/tlR8txIaI5rJgsj5uMF6a2Q2ous=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/agent.asp-final-2c6fe755ba534208bc93e647f2168b8f.png"
-          url="https://youtu.be/5hjrPILA3-8?si=Epf0o5VyIIWZ2qP0"
-        />
-        <Card
-          title="how agents work"
-          about="in this lesson you learn how llms work and how you can learn fron them"
-          image="https://www.investopedia.com/thmb/tlR8txIaI5rJgsj5uMF6a2Q2ous=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/agent.asp-final-2c6fe755ba534208bc93e647f2168b8f.png"
-          url="https://youtu.be/5hjrPILA3-8?si=Epf0o5VyIIWZ2qP0"
-        />
-        <Card
-          title="how agents work"
-          about="in this lesson you learn how llms work and how you can learn fron them"
-          image="https://www.investopedia.com/thmb/tlR8txIaI5rJgsj5uMF6a2Q2ous=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/agent.asp-final-2c6fe755ba534208bc93e647f2168b8f.png"
-          url="https://youtu.be/5hjrPILA3-8?si=Epf0o5VyIIWZ2qP0"
-        />
-        <Card
-          title="how agents work"
-          about="in this lesson you learn how llms work and how you can learn fron them"
-          image="https://www.investopedia.com/thmb/tlR8txIaI5rJgsj5uMF6a2Q2ous=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/agent.asp-final-2c6fe755ba534208bc93e647f2168b8f.png"
-          url="https://youtu.be/5hjrPILA3-8?si=Epf0o5VyIIWZ2qP0"
+          title="GenAI Roadmap for Beginners | End-to-End GenAI Course 2025 |"
+          about="Dive into the ultimate GenAI learning journey — from zero to hero. This roadmap covers everything from the basics of Large Language Models to building your own AI agents, tools, and apps. Perfect for beginners stepping into the future of AI in 2025."
+          image="https://i.ytimg.com/vi/pSVk-5WemQ0/hqdefault.jpg"
+          url="https://youtu.be/pSVk-5WemQ0?si=iKSAWeneeAmqQ4-6"
         />
       </div>
     </>
