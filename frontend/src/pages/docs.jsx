@@ -2,10 +2,10 @@ import { NavLink, Outlet } from "react-router-dom";
 
 export default function Docs() {
   const links = [
-    { path: "start", label: "Get start" },
-    { path: "llm", label: "learn about llm" },
-    { path: "models", label: "learn about models" },
-    { path: "prompts", label: "learn about prompts" },
+    { path: "start", label: "build simple chatbot" },
+    { path: "llm", label: " langgraph UI chatbot" },
+    { path: "models", label: "multi-model agents" },
+    { path: "prompts", label: "chatbot using langchain " },
   ];
 
   return (
