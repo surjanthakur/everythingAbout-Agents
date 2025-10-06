@@ -1,14 +1,20 @@
-import Card from "../components/resourceCard";
+import ResourceData from "../data/resourceData";
+import "../css/resource.css";
+import { Link } from "react-router-dom";
 
 export default function Resource() {
   return (
     <>
       <div className="relative overflow-hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
-        <Card
-          title="learn about prompts"
-          about="im this section you learn about prompts"
-          url="https://help.openai.com/en/articles/4936848-how-do-i-create-a-good-prompt-for-an-ai-model"
-        />
+        {ResourceData.map((data, idx) => (
+          <div key={idx} className="card ms-3">
+            <span className="card__title">{data.title}</span>
+            <p className="card__content">{data.about}</p>
+            <Link to={data.url}>
+              <button className="card__button">read docs</button>
+            </Link>
+          </div>
+        ))}
       </div>
     </>
   );
