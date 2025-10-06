@@ -6,7 +6,7 @@ export default function Start() {
     <>
       <div className=" md:px-20 lg:px-40 py-10 bg-gray-950 text-gray-100">
         {/* Title */}
-        <h1 className="text-4xl font-bold text-center mb-10 text-pink-500">
+        <h1 className="text-4xl font-bold text-center mb-10  text-cyan-400">
           🤖 Simple Chatbot using LangChain
         </h1>
 
@@ -24,7 +24,7 @@ export default function Start() {
 
         {/* Requirements */}
         <section className="mt-10">
-          <h2 className="text-2xl font-semibold text-pink-400 mb-3">
+          <h2 className="text-2xl font-semibold  text-cyan-400 mb-3">
             ⚙️ What You Need (Requirements)
           </h2>
           <p>
@@ -58,7 +58,7 @@ export default function Start() {
 
         {/* Code Explanation */}
         <section className="mt-10">
-          <h2 className="text-2xl font-semibold text-pink-400 mb-3">
+          <h2 className="text-2xl font-semibold  text-cyan-400 mb-3">
             🧠 What the Code Does — Line by Line
           </h2>
           <img
@@ -102,7 +102,7 @@ export default function Start() {
 
         {/* Message Design */}
         <section className="mt-10">
-          <h2 className="text-2xl font-semibold text-pink-400 mb-3">
+          <h2 className="text-2xl font-semibold  text-cyan-400 mb-3">
             🧩 Why LangChain Wraps Messages
           </h2>
           <p>
@@ -119,7 +119,7 @@ export default function Start() {
 
         {/* Skeptical Advice */}
         <section className="mt-10">
-          <h2 className="text-2xl font-semibold text-pink-400 mb-3">
+          <h2 className="text-2xl font-semibold  text-cyan-400 mb-3">
             ⚠️ Be a Little Skeptical
           </h2>
           <p>
@@ -136,7 +136,7 @@ export default function Start() {
 
         {/* Next Steps */}
         <section className="mt-10">
-          <h2 className="text-2xl font-semibold text-pink-400 mb-3">
+          <h2 className="text-2xl font-semibold  text-cyan-400 mb-3">
             🚀 Next Steps — Level Up
           </h2>
           <ul className="list-disc pl-6 space-y-2">
