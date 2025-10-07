@@ -14,7 +14,7 @@ engine = create_engine(database_url, echo=False)
 
 def create_db():
     SQLModel.metadata.create_all(engine)
-    print("database is connected ⚙️✅")
+    print("database is connected ✅")
 
 
 def get_session():

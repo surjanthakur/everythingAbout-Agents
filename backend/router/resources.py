@@ -21,4 +21,20 @@ def get_allResources(session_db: Session = Depends(get_session)):
 
 @router.post("/resources/create")
 def create_resources(form_data: Resources, session_db: Session = Depends(get_session)):
-    pass
+    try:
+        resource_id = str(uuid.uuid4())
+        new_resource = Resources(
+            id=resource_id,
+            title=form_data.title,
+            about=form_data.about,
+            url=form_data.url,
+        )
+        session_db.add(new_resource)
+        session_db.commit()
+        session_db.refresh(new_resource)
+        return new_resource
+    except Exception as err:
+        raise HTTPException(
+            status_code=status.HTTP_415_UNSUPPORTED_MEDIA_TYPE,
+            detail=f"cant create post {err}",
+        )
