@@ -92,3 +92,54 @@
 .Tcard__button:active {
   transform: scale(0.95);
 }
+
+/* 📱 MOBILE RESPONSIVENESS */
+@media (max-width: 640px) {
+  .Tcard {
+    max-width: 90%;
+    padding: 12px;
+    box-shadow: 6px 6px 0 #000;
+  }
+
+  .Tcard__title {
+    font-size: 1.1rem;
+  }
+
+  .Tcard__content {
+    font-size: 0.9rem;
+  }
+
+  .Tcard__button {
+    font-size: 0.9rem;
+    padding: 7px 12px;
+  }
+
+  .Tcard img {
+    height: 180px;
+  }
+}
+
+/* 💫 EXTRA SMALL (under 400px) */
+@media (max-width: 400px) {
+  .Tcard {
+    padding: 10px;
+    box-shadow: 4px 4px 0 #000;
+  }
+
+  .Tcard__title {
+    font-size: 1rem;
+  }
+
+  .Tcard__content {
+    font-size: 0.85rem;
+  }
+
+  .Tcard__button {
+    font-size: 0.85rem;
+    max-width: 160px;
+  }
+
+  .Tcard img {
+    height: 150px;
+  }
+}

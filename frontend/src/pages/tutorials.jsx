@@ -5,10 +5,10 @@ import "./tutorial.css";
 export default function Tutorial() {
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
         {TutorialData.map((data, indx) => (
-          <div className="Tcard ms-3" key={indx}>
-            <div className="w-full h-50 overflow-hidden ">
+          <div className="Tcard" key={indx}>
+            <div className="w-full h-52 overflow-hidden rounded-md">
               <img
                 className="w-full h-full object-cover"
                 src={data.image}

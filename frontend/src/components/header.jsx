@@ -94,13 +94,6 @@ export default function Navbar() {
               Reading materials
             </Link>
             <Link
-              to="/tutorial"
-              className="text-sm font-medium text-white transition-all hover:text-yellow-500 py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Tutorials
-            </Link>
-            <Link
               to="/about"
               className="text-sm font-medium text-white transition-all hover:text-yellow-500 py-2"
               onClick={() => setIsMenuOpen(false)}

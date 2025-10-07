@@ -135,3 +135,47 @@
 .glitch {
   animation: glitch 0.3s infinite;
 }
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 640px) {
+  .card {
+    padding: 16px;
+    box-shadow: 6px 6px 0 #000;
+    width: 90%;
+  }
+
+  .card__title {
+    font-size: 1.4rem;
+  }
+
+  .card__content {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .card__button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 400px) {
+  .card {
+    padding: 12px;
+    box-shadow: 4px 4px 0 #000;
+  }
+
+  .card__title {
+    font-size: 1.2rem;
+  }
+
+  .card__content {
+    font-size: 0.85rem;
+  }
+
+  .card__button {
+    max-width: 160px;
+    font-size: 0.85rem;
+  }
+}
