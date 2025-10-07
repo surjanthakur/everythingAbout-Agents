@@ -1,4 +1,4 @@
-import "./tutorialForm.css";
+import "./tutorial-and-resource.css";
 
 export default function CreateResource() {
   const handleSubmit = (e) => {
@@ -10,9 +10,9 @@ export default function CreateResource() {
     <div className="form-wrapper">
       <div className="form">
         <div className="title">
-          Welcome,
+          Contribute Video Tutorials
           <br />
-          <span>contribute your content</span>
+          <span>contribute any video from any platform throught link🔗</span>
         </div>
 
         <input

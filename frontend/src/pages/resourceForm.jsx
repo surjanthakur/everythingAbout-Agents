@@ -1,4 +1,4 @@
-import "./resourceForm.css";
+import "./tutorial-and-resource.css";
 
 export default function CreateResource() {
   const handleSubmit = (e) => {
@@ -10,9 +10,11 @@ export default function CreateResource() {
     <div className="form-wrapper">
       <div className="form">
         <div className="title">
-          Welcome,
+          Contribute Research Papers Docs
           <br />
-          <span>contribute your content</span>
+          <span>
+            contribute your any pdf ,docs ,file, research paper Link🔗
+          </span>
         </div>
 
         <input
