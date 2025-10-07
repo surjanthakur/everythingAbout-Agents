@@ -1,5 +1,5 @@
 import ResourceData from "../data/resourceData";
-import "../css/resource.css";
+import "./resource.css";
 import { Link } from "react-router-dom";
 
 export default function Resource() {

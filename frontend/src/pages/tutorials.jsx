@@ -1,6 +1,6 @@
 import TutorialData from "../data/tutorialsData";
 import { Link } from "react-router-dom";
-import "../css/tutorial.css";
+import "./tutorial.css";
 
 export default function Tutorial() {
   return (
