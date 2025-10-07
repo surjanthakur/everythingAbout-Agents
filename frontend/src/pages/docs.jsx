@@ -4,8 +4,6 @@ export default function Docs() {
   const links = [
     { path: "start", label: "build simple chatbot" },
     { path: "llm", label: " langgraph UI chatbot" },
-    { path: "models", label: "multi-model agents" },
-    { path: "prompts", label: "chatbot using langchain " },
   ];
 
   return (

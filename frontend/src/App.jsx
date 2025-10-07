@@ -21,7 +21,11 @@ export default function App() {
         <Navbar />
         <main className="flex-1 hero-dots">
           <Suspense
-            fallback={<div className="text-center p-8">Loading...</div>}
+            fallback={
+              <div className="flex justify-center items-center h-screen">
+                <div className="w-12 h-12 border-10 border-black border-dotted rounded-full animate-spin"></div>
+              </div>
+            }
           >
             <Routes>
               <Route path="/" element={<Home />} />
