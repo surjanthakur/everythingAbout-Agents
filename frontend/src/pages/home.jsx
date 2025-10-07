@@ -3,7 +3,6 @@ import { animate, stagger, splitText } from "animejs";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/all";
 import { Link } from "react-router-dom";
 
 import "../css/home.css";
@@ -22,26 +21,14 @@ export default function Home() {
   });
 
   useEffect(() => {
-    const { chars } = splitText("h1", {
-      words: false,
-      chars: true,
+    const { words } = splitText("h1", {
+      words: { wrap: "clip" },
     });
 
-    animate(chars, {
-      // Property keyframes
-      y: [
-        { to: "-2.75rem", ease: "outExpo", duration: 600 },
-        { to: 0, ease: "outBounce", duration: 3000, delay: 2000 },
-      ],
-      // Property specific parameters
-      rotate: {
-        from: "-1turn",
-        delay: 0,
-      },
-      delay: stagger(50),
-      ease: "inOutCirc",
-      loopDelay: 1000,
-      loop: true,
+    animate(words, {
+      y: [{ to: ["100%"] }],
+      duration: 750,
+      delay: stagger(100),
     });
   }, []);
   return (
