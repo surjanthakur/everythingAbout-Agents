@@ -11,11 +11,11 @@
 }
 
 .form {
-  --input-focus: #2d8cf0;
-  --font-color: #323232;
-  --font-color-sub: #666;
+  --input-focus: #9d0de5;
+  --font-color: #ffffff;
+  --font-color-sub: #ffe600;
   --bg-color: #fff;
-  --main-color: #323232;
+  --main-color: #ffc003;
   width: 100%;
   max-width: 500px;
   padding: 20px;
