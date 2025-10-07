@@ -42,12 +42,6 @@ export default function Navbar() {
             >
               Tutorials
             </Link>
-            <Link
-              to="/about"
-              className="text-sm lg:text-base font-medium text-white  transition-all  hover:text-yellow-500"
-            >
-              About
-            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -92,13 +86,6 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(false)}
             >
               Reading materials
-            </Link>
-            <Link
-              to="/about"
-              className="text-sm font-medium text-white transition-all hover:text-yellow-500 py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              About
             </Link>
           </div>
         </div>
