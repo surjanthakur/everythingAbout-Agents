@@ -61,7 +61,7 @@ export default function Navbar() {
                     CreateTutorial
                   </Link>
                   <Link
-                    to="/createReadingDocs"
+                    to="/createResource"
                     className="block px-4 py-2 text-sm text-white hover:bg-yellow-500 hover:text-black transition-colors"
                   >
                     CreateReadingDocs

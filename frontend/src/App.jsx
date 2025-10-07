@@ -4,6 +4,8 @@ import { lazy, Suspense } from "react";
 
 import Navbar from "./components/header";
 import Home from "./pages/home";
+import CreateTutorial from "./pages/tutorialForm";
+import CreateResource from "./pages/resourceForm";
 
 const Tutorial = lazy(() => import("./pages/tutorials"));
 const Resource = lazy(() => import("./pages/resources"));
@@ -39,6 +41,8 @@ export default function App() {
               </Route>
               <Route path="/resource" element={<Resource />} />
               <Route path="/tutorial" element={<Tutorial />} />
+              <Route path="/createResource" element={<CreateResource />} />
+              <Route path="/createTutorial" element={<CreateTutorial />} />
             </Routes>
           </Suspense>
         </main>
