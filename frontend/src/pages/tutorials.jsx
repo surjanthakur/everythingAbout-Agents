@@ -14,9 +14,9 @@ export default function Tutorial() {
           .get("http://127.0.0.1:8000/allTutorials")
           .then((res) => setData(res.data));
       } catch (e) {
-        console.log("cant fetch tutorials:", e);
         alter("opps! ⚠️ can't fetch tutorials");
         navigate("/");
+        console.log("cant fetch tutorials:", e);
       }
     };
     fetchTutorials();
