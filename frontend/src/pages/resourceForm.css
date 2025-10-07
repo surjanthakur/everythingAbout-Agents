@@ -12,10 +12,10 @@
 
 .form {
   --input-focus: #9d0de5;
-  --font-color: #ffffff;
-  --font-color-sub: #ffe600;
+  --font-color: #000000;
+  --font-color-sub: #000000;
   --bg-color: #fff;
-  --main-color: #ffc003;
+  --main-color: #000000;
   width: 100%;
   max-width: 500px;
   padding: 20px;
@@ -25,9 +25,8 @@
   align-items: flex-start;
   justify-content: center;
   gap: 20px;
-  border-radius: 5px;
-  border: 2px solid var(--main-color);
-  box-shadow: 4px 4px var(--main-color);
+  border: 5px solid var(--main-color);
+  box-shadow: 14px 12px var(--main-color);
   box-sizing: border-box;
 }
 
