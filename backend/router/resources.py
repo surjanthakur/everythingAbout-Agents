@@ -1,6 +1,7 @@
 from fastapi import APIRouter, HTTPException, status, Depends
 from sqlmodel import Session
 from databaseSchema import Resources
+from pydanticModel import ShowFields
 from database import get_session
 import uuid
 
@@ -20,7 +21,7 @@ def get_allResources(session_db: Session = Depends(get_session)):
 
 
 @router.post("/resources/create")
-def create_resources(form_data: Resources, session_db: Session = Depends(get_session)):
+def create_resources(form_data: ShowFields, session_db: Session = Depends(get_session)):
     try:
         resource_id = str(uuid.uuid4())
         new_resource = Resources(
