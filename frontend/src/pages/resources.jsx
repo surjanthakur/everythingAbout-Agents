@@ -1,4 +1,3 @@
-import ResourceData from "../data/resourceData";
 import "./resource.css";
 import { Link } from "react-router-dom";
 

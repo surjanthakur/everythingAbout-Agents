@@ -1,18 +1,34 @@
-import TutorialData from "../data/tutorialsData";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./tutorial.css";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 export default function Tutorial() {
+  const navigate = useNavigate();
+  const [data, setData] = useState([]);
+  // fetch all tutorials
+  useEffect(() => {
+    const fetchTutorials = async () => {
+      try {
+        await axios
+          .get("http://127.0.0.1:8000/allTutorials")
+          .then((res) => setData(res.data));
+      } catch (e) {
+        console.log("cant fetch tutorials:", e);
+        alter("opps! ⚠️ can't fetch tutorials");
+        navigate("/");
+      }
+    };
+    fetchTutorials();
+  }, [navigate]);
+
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
-        {TutorialData.map((data, indx) => (
+        {data.map((data, indx) => (
           <div className="Tcard" key={indx}>
-            <div className="w-full h-52 overflow-hidden rounded-md"></div>
-
             <span className="Tcard__title">{data.title}</span>
             <p className="Tcard__content">{data.about}</p>
-
             <Link to={data.url}>
               <button className="Tcard__button">view playlist</button>
             </Link>

@@ -13,8 +13,6 @@ const Docs = lazy(() => import("./pages/docs"));
 const Overview = lazy(() => import("./docs/overview"));
 const Start = lazy(() => import("./docs/getStart"));
 const Aboutllm = lazy(() => import("./docs/llm"));
-const AboutModels = lazy(() => import("./docs/models"));
-const AboutPrompts = lazy(() => import("./docs/prompts"));
 
 export default function App() {
   return (
@@ -36,8 +34,6 @@ export default function App() {
                 <Route index element={<Overview />}></Route>
                 <Route path="start" element={<Start />}></Route>
                 <Route path="llm" element={<Aboutllm />}></Route>
-                <Route path="models" element={<AboutModels />}></Route>
-                <Route path="prompts" element={<AboutPrompts />}></Route>
               </Route>
               <Route path="/resource" element={<Resource />} />
               <Route path="/tutorial" element={<Tutorial />} />
