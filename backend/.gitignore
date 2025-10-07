@@ -1,0 +1,85 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Byte-compiled / optimized / DLL files
+*.so
+*.dll
+*.dylib
+
+# --- FastAPI / Uvicorn / Gunicorn logs ---
+*.log
+logs/
+*.pid
+
+# --- Environment variables ---
+.env
+.env.*
+*.env
+
+# --- Database / local storage ---
+*.db
+*.sqlite3
+*.sqlite
+data/
+instance/
+storage/
+
+# --- Build artifacts ---
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+# --- Testing ---
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.cache
+
+# --- IDEs & Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+
+# --- OS-specific ---
+.DS_Store
+Thumbs.db
+
+# --- Docker ---
+*.pid
+docker-compose.override.yml
+.env.docker
+
+# --- FastAPI specific ---
+# (Optional) Ignore auto-generated OpenAPI docs or cache if generated
+openapi.json
+
+# --- Mypy / Ruff / Lint ---
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+
+# --- Jupyter / IPython ---
+.ipynb_checkpoints/
+profile_default/
+__pycache__/
+
+# --- Local scripts or secrets ---
+scripts/local_*
+secret_*
