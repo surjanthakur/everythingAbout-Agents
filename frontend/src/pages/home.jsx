@@ -1,10 +1,26 @@
 import { Bot, AlertTriangle } from "lucide-react";
 import { animate, stagger, splitText } from "animejs";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
 import { Link } from "react-router-dom";
+
 import "../css/home.css";
 
 export default function Home() {
+  const gaspRef = useRef();
+
+  useGSAP(() => {
+    gsap.from(gaspRef.current, {
+      opacity: 0,
+      duration: 1,
+      y: 50,
+
+      stagger: 1,
+    });
+  });
+
   useEffect(() => {
     const { chars } = splitText("h1", {
       words: false,
@@ -44,7 +60,10 @@ export default function Home() {
               EVERYTHING ABOUT AGENTS
             </h1>
 
-            <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
+            <p
+              ref={gaspRef}
+              className=" text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-12 max-w-3xl mx-auto"
+            >
               Your one-stop hub for AI Agents, Chatbots, and Automation
             </p>
 
