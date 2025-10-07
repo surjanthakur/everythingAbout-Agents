@@ -113,10 +113,6 @@
     font-size: 0.9rem;
     padding: 7px 12px;
   }
-
-  .Tcard img {
-    height: 180px;
-  }
 }
 
 /* 💫 EXTRA SMALL (under 400px) */
@@ -137,9 +133,5 @@
   .Tcard__button {
     font-size: 0.85rem;
     max-width: 160px;
-  }
-
-  .Tcard img {
-    height: 150px;
   }
 }
