@@ -9,6 +9,7 @@ env/
 .venv/
 .env/
 
+
 # Byte-compiled / optimized / DLL files
 *.so
 *.dll
@@ -69,6 +70,7 @@ docker-compose.override.yml
 # --- FastAPI specific ---
 # (Optional) Ignore auto-generated OpenAPI docs or cache if generated
 openapi.json
+client_secret_131383326587-jgi58940k1rljjorfam3mvoa9jktl5rf.apps.googleusercontent.com.json
 
 # --- Mypy / Ruff / Lint ---
 .mypy_cache/
