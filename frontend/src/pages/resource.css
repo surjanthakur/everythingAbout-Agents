@@ -1,11 +1,11 @@
 /* From Uiverse.io by 0xnihilism */
 .card {
-  width: 600px;
   max-width: max-content;
-  padding: 20px;
+  padding: 10px;
   background: #fff;
   background: #9d0de5;
   margin-top: 2rem;
+  margin-left: 2rem;
   border: 5px solid black;
   box-shadow: 12px 12px 0 #000;
   transition: transform 0.3s, box-shadow 0.3s;

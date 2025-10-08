@@ -53,7 +53,7 @@ export default function CreateResource() {
 
   return (
     <div className="form-wrapper">
-      <Toaster position="top-center" reverseOrder={false} />
+      <Toaster position="bottom-center" reverseOrder={false} />
       <form className="form" onSubmit={handleSubmit}>
         <div className="title">
           Contribute Video Tutorials
