@@ -86,8 +86,7 @@ export default function Home() {
           <div className="text-center mb-16 animate-fade-in">
             <div className="flex justify-center mb-8">
               <div className="relative">
-                <div className="absolute inset-0 bg-blue-500 dark:bg-blue-400 blur-3xl opacity-20 rounded-full"></div>
-                <Bot className="w-24 h-24 text-black dark:text-black relative" />
+                <Bot className="w-24 h-24 text-black dark:text-black relative " />
               </div>
             </div>
 
