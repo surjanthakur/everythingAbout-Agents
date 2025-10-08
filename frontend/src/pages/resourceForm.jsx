@@ -45,7 +45,7 @@ export default function CreateResource() {
         setInputData({ title: "", url: "", about: "" });
 
         // small delay so toast shows
-        setTimeout(() => navigate("/tutorial"), 1200);
+        setTimeout(() => navigate("/resource"), 1200);
       }
     } catch (err) {
       console.error("Error creating resource:", err);
@@ -57,7 +57,7 @@ export default function CreateResource() {
 
   return (
     <div className="form-wrapper">
-      <Toaster position="top-center" reverseOrder={false} />
+      <Toaster position="top-right" reverseOrder={false} />
       <form className="form" onSubmit={handleSubmit}>
         <div className="title">
           Contribute Research Papers & Docs
