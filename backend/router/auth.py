@@ -17,10 +17,6 @@ router = APIRouter(tags=["auth routes"])
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 
-def bcrypt(password: str):
-    return pwd_context.hash_needs_update(password)
-
-
 def verify(plain_pass, hash_pass):
     return pwd_context.verify(plain_pass, hash_pass)
 
