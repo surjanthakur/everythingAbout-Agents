@@ -10,6 +10,7 @@ from .authSessionFunc import create_access_token
 from dotenv import load_dotenv
 from pydanticModel import ShowUser
 from fastapi.responses import JSONResponse
+from .authSessionFunc import get_current_user
 
 load_dotenv(override=True)
 
