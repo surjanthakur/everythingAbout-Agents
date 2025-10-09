@@ -21,7 +21,7 @@ def get_allTutorials(session_db: Session = Depends(get_session)):
 
 
 @router.post("/tutorials/create")
-def create_resources(
+def create_tutorials(
     form_data: ShowFields,
     session_db: Session = Depends(get_session),
     currUser: Session = Depends(get_current_user),
