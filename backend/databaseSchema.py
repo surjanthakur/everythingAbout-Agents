@@ -1,3 +1,4 @@
+from pydantic import EmailStr
 from sqlmodel import Field, SQLModel
 
 
@@ -13,3 +14,10 @@ class Resources(SQLModel, table=True):
     title: str = Field(max_length=100, min_length=5)
     about: str = Field(min_length=10)
     url: str
+
+
+class User(SQLModel, table=True):
+    id: str | None = Field(default=None, primary_key=True)
+    username: str
+    email: EmailStr
+    password: str
