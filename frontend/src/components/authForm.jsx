@@ -12,24 +12,60 @@ export default function AuthForm() {
     password: "",
   });
 
-  const handleChange = (e) => {
+  const [loginData, setLoginData] = useState({
+    username: "",
+    password: "",
+  });
+
+  // handle signup onchange
+  const handleSignupChange = (e) => {
     const { name, value } = e.target;
     setSignupData((prev) => ({ ...prev, [name]: value }));
   };
 
+  // handle login onchange
+  const handleLoginChange = (e) => {
+    const { name, value } = e.target;
+    setLoginData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  // handle signup submit
   const handleSignupSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://127.0.0.1:8000/signup", inputData);
+      const res = await axios.post("http://127.0.0.1:8000/signup", signupData);
       if (res.status === 200 || res.status === 201) {
         toast.success("account created successfuly🎉");
         setTimeout(() => navigate("/"), 3000);
+      } else {
+        toast.error("⚠️ something went wrong ? cant create account!");
       }
     } catch (err) {
       console.log(err);
     }
   };
 
+  // handle login submit
+  const handleLoginSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const formData = new FormData();
+      formData.append("username", loginData.username);
+      formData.append("password", loginData.password);
+      const res = await axios.post("http://127.0.0.1:8000/login", formData, {
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      });
+      if (res.status === 200 || res.status === 201) {
+        toast.success("user login successfuly🎉");
+        setTimeout(() => navigate("/"), 3000);
+      } else {
+        toast.error("⚠️ something went wrong ? cant login!");
+      }
+    } catch (err) {
+      console.log(err);
+      toast.error("Login failed ⚠️");
+    }
+  };
   return (
     <>
       <div className="wrapper">
@@ -44,22 +80,24 @@ export default function AuthForm() {
               {/* Login Side */}
               <div className="flip-card__front">
                 <div className="title">Log in</div>
-                <form className="flip-card__form">
+                <form onSubmit={handleLoginSubmit} className="flip-card__form">
                   <input
                     className="flip-card__input"
-                    name="email"
-                    placeholder="enter email"
-                    type="email"
-                    value={""}
-                    onChange={handleChange}
+                    name="username"
+                    placeholder="enter username"
+                    type="text"
+                    value={loginData.username}
+                    autoComplete="off"
+                    onChange={handleLoginChange}
                   />
                   <input
                     className="flip-card__input"
                     name="password"
                     placeholder=" enter Password"
                     type="password"
-                    value={""}
-                    onChange={handleChange}
+                    value={loginData.password}
+                    onChange={handleLoginChange}
+                    autoComplete="off"
                   />
                   <button type="submit" className="flip-card__btn">
                     Let&apos;s go!
@@ -76,24 +114,27 @@ export default function AuthForm() {
                     placeholder="enter username"
                     name="username"
                     type="text"
+                    autoComplete="off"
                     value={signupData.username}
-                    onChange={handleChange}
+                    onChange={handleSignupChange}
                   />
                   <input
                     className="flip-card__input"
                     name="email"
                     placeholder=" enter Email"
                     type="email"
+                    autoComplete="off"
                     value={signupData.email}
-                    onChange={handleChange}
+                    onChange={handleSignupChange}
                   />
                   <input
                     className="flip-card__input"
                     name="password"
                     placeholder="enter Password"
                     type="password"
+                    autoComplete="off"
                     value={signupData.password}
-                    onChange={handleChange}
+                    onChange={handleSignupChange}
                   />
                   <button type="submit" className="flip-card__btn">
                     Confirm!

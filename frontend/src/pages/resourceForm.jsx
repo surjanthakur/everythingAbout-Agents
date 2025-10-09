@@ -35,7 +35,8 @@ export default function CreateResource() {
     try {
       const res = await axios.post(
         "http://127.0.0.1:8000/resources/create",
-        inputData
+        inputData,
+        { withCredentials: true }
       );
 
       if (res.status === 200 || res.status === 201) {

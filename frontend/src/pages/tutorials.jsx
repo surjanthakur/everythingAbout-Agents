@@ -11,7 +11,7 @@ export default function Tutorial() {
     const fetchTutorials = async () => {
       try {
         await axios
-          .get("http://127.0.0.1:8000/allTutorials")
+          .get("http://127.0.0.1:8000/allTutorials", { withCredentials: true })
           .then((res) => setData(res.data));
       } catch (e) {
         alter("opps! ⚠️ can't fetch tutorials");

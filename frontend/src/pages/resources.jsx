@@ -11,7 +11,7 @@ export default function Resource() {
     const fetchResource = async () => {
       try {
         axios
-          .get("http://127.0.0.1:8000/allResources")
+          .get("http://127.0.0.1:8000/allResources", { withCredentials: true })
           .then((res) => setData(res.data));
       } catch (e) {
         alert("opps! cant fetch resources");
