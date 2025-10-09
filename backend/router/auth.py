@@ -34,7 +34,7 @@ def signup_user(user: User, session_db: Session = Depends(get_session)):
             detail="User with that email or username already exists.",
         )
     try:
-        hash_pass = pwd_context.hash(user.password[:72])
+        hash_pass = pwd_context.hash(user.password)
         user_id = str(uuid.uuid4())
         new_user = User(
             id=user_id, username=user.username, email=user.email, password=hash_pass
