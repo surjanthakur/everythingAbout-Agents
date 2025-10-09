@@ -6,7 +6,7 @@ from passlib.context import CryptContext  # type: ignore
 import uuid
 from datetime import timedelta
 from fastapi.security import OAuth2PasswordRequestForm
-from authSessionFunc import create_access_token
+from .authSessionFunc import create_access_token
 from dotenv import load_dotenv
 
 
