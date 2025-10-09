@@ -63,7 +63,7 @@ export default function AuthForm() {
                 </form>
               </div>
 
-              {/* Signup Side */}
+              {/* signup form */}
               <div className="flip-card__back">
                 <div className="title">Sign up</div>
                 <form onSubmit={handleSubmit} className="flip-card__form">
