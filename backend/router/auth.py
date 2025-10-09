@@ -8,7 +8,7 @@ from datetime import timedelta
 from fastapi.security import OAuth2PasswordRequestForm
 from .authSessionFunc import create_access_token
 from dotenv import load_dotenv
-
+from pydanticModel import ShowUser
 
 load_dotenv(override=True)
 
@@ -21,7 +21,7 @@ def verify(plain_pass, hash_pass):
     return pwd_context.verify(plain_pass, hash_pass)
 
 
-@router.post("/signup", status_code=status.HTTP_201_CREATED)
+@router.post("/signup", status_code=status.HTTP_201_CREATED, response_model=ShowUser)
 def signup_user(user: User, session_db: Session = Depends(get_session)):
     existing_user = session_db.query(User).filter(User.email == user.email).first()  # type: ignore
     if existing_user:
