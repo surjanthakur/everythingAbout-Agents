@@ -1,6 +1,7 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
+import { Toaster } from "react-hot-toast";
 
 import Navbar from "./components/header";
 import Home from "./pages/home";
@@ -21,6 +22,7 @@ export default function App() {
       <div className="flex flex-col min-h-screen bg-white  ">
         <Navbar />
         <main className="flex-1 hero-dots">
+          <Toaster position="bottom-center" reverseOrder={false} />
           <Suspense
             fallback={
               <div className="flex justify-center items-center h-screen">
