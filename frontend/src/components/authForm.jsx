@@ -2,7 +2,7 @@ import "./authform.css";
 
 export default function AuthForm() {
   return (
-    <div className="wrapper">
+    <div className="form-wrappe wrapper">
       <div className="card-switch">
         <label className="switch">
           <input type="checkbox" className="toggle" />
@@ -17,13 +17,13 @@ export default function AuthForm() {
                 <input
                   className="flip-card__input"
                   name="email"
-                  placeholder="Email"
+                  placeholder="enter email"
                   type="email"
                 />
                 <input
                   className="flip-card__input"
                   name="password"
-                  placeholder="Password"
+                  placeholder=" enter Password"
                   type="password"
                 />
                 <button type="submit" className="flip-card__btn">
@@ -38,20 +38,20 @@ export default function AuthForm() {
               <form className="flip-card__form">
                 <input
                   className="flip-card__input"
-                  placeholder="Name"
-                  name="name"
+                  placeholder="enter username"
+                  name="username"
                   type="text"
                 />
                 <input
                   className="flip-card__input"
                   name="email"
-                  placeholder="Email"
+                  placeholder=" enter Email"
                   type="email"
                 />
                 <input
                   className="flip-card__input"
                   name="password"
-                  placeholder="Password"
+                  placeholder="enter Password"
                   type="password"
                 />
                 <button type="submit" className="flip-card__btn">

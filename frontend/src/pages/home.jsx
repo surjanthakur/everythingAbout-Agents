@@ -106,7 +106,7 @@ export default function Home() {
 
             <div className="flex flex-wrap justify-center gap-4">
               <Link
-                href="/authform"
+                to="/authform"
                 className="py-5 h-18 w-38 text-2xl text-white bg-black hover:bg-yellow-500 hover:text-black  font-bold transition-all hover:scale-105 shadow-lg hover:shadow-xl "
               >
                 Get Started

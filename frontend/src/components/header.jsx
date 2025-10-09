@@ -104,9 +104,9 @@ export default function Navbar() {
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
-              <X className="w-8 h-8 transition-all duration-300 rotate-180" />
+              <X className="w-20 h-8 transition-all duration-300 rotate-180" />
             ) : (
-              <Menu className="w-8 h-8 transition-all duration-300" />
+              <Menu className="w-20 h-8 transition-all duration-300" />
             )}
           </button>
         </div>
