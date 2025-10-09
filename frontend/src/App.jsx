@@ -6,6 +6,7 @@ import Navbar from "./components/header";
 import Home from "./pages/home";
 import CreateTutorial from "./pages/tutorialForm";
 import CreateResource from "./pages/resourceForm";
+import AuthForm from "./components/authForm";
 
 const Tutorial = lazy(() => import("./pages/tutorials"));
 const Resource = lazy(() => import("./pages/resources"));
@@ -39,6 +40,7 @@ export default function App() {
               <Route path="/tutorial" element={<Tutorial />} />
               <Route path="/createResource" element={<CreateResource />} />
               <Route path="/createTutorial" element={<CreateTutorial />} />
+              <Route path="/authform" element={<AuthForm />} />
             </Routes>
           </Suspense>
         </main>
