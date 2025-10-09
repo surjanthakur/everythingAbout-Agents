@@ -1,5 +1,7 @@
 import "./authform.css";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 export default function AuthForm() {
   const [inputData, setinputData] = useState({
@@ -13,8 +15,13 @@ export default function AuthForm() {
     setinputData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    try {
+      await axios.post("http://127.0.0.1:8000/");
+    } catch (e) {
+      console.log("err");
+    }
   };
 
   return (
@@ -51,7 +58,7 @@ export default function AuthForm() {
             {/* Signup Side */}
             <div className="flip-card__back">
               <div className="title">Sign up</div>
-              <form className="flip-card__form">
+              <form onSubmit={handleSubmit} className="flip-card__form">
                 <input
                   className="flip-card__input"
                   placeholder="enter username"
