@@ -4,7 +4,7 @@ from databaseSchema import Resources
 from pydanticModel import ShowFields
 from database import get_session
 import uuid
-
+from .authSessionFunc import get_current_user
 
 router = APIRouter(tags=["read resources routes"])
 
@@ -21,7 +21,11 @@ def get_allResources(session_db: Session = Depends(get_session)):
 
 
 @router.post("/resources/create")
-def create_resources(form_data: ShowFields, session_db: Session = Depends(get_session)):
+def create_resources(
+    form_data: ShowFields,
+    session_db: Session = Depends(get_session),
+    currUser: Session = Depends(get_current_user),
+):
     try:
         resource_id = str(uuid.uuid4())
         new_resource = Resources(

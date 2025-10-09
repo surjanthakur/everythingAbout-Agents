@@ -9,6 +9,7 @@ from fastapi.security import OAuth2PasswordRequestForm
 from .authSessionFunc import create_access_token
 from dotenv import load_dotenv
 from pydanticModel import ShowUser
+from fastapi.responses import JSONResponse
 
 load_dotenv(override=True)
 
@@ -67,4 +68,12 @@ def login(
     access_token = create_access_token(
         data={"sub": user.username}, expires_delta=access_token_expires
     )
-    return {"access_token": access_token, "token_type": "bearer"}
+    response = JSONResponse({"message": "Login successfully"})
+    response.set_cookie(
+        key="access_token",
+        value=access_token,
+        httponly=True,
+        max_age=3600,
+        secure=True,
+    )
+    return response
