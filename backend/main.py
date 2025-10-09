@@ -29,3 +29,4 @@ app.add_middleware(
 
 app.include_router(resources.router)
 app.include_router(tutorials.router)
+app.include_router(auth.router)
