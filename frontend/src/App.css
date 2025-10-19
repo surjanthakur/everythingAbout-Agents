@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .hero-dots {
-  background-color: #ff00a7;
+  background-color: #41082d;
 }
 
 .hero-dots::before {
